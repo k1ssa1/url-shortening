@@ -1,0 +1,35 @@
+main {
+  background-color: hsl(0, 0%, 75%);
+}
+
+.urlfeature {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+#form {
+  position: relative;
+  bottom: 50%;
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+  padding: 2rem 2.5rem;
+  width: 850px;
+  display: flex;
+  justify-content: center;
+}
+
+#form__input {
+  width: 65%;
+  padding: 0.7rem;
+  margin: 0 0.8rem;
+}
+
+#form__button {
+  width: 15%;
+  padding: 0.7rem;
+  background-color: hsl(180, 66%, 49%);
+  border: 1px solid hsl(180, 66%, 49%);
+  color: white;
+  border-radius: 5px;
+}
