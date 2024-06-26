@@ -25,14 +25,21 @@ document.getElementById("form").addEventListener("submit", async e => {
         let initialURL = document.createElement("h6")
         let shortURL = document.createElement("h6")
         let copyButton = document.createElement("button")
+        let cardAside = document.createElement("div")
         firstURLvalue = document.getElementById("form__input").value;
         initialURL.innerHTML = firstURLvalue;
         shortURL.innerHTML = promise.result_url;
         copyButton.innerHTML ="copy"
-        let cardElements = [initialURL,shortURL,copyButton]
-        cardElements.forEach(element => {
-            card.appendChild(element)
-        })
+
+        card.className = "card"
+        initialURL.className = "card__long-url-title"
+        shortURL.className = "aside__short-url-title"
+        copyButton.className = "aside__copy-button"
+        cardAside.className = "card__aside"
+        cardAside.appendChild(shortURL);
+        cardAside.appendChild(copyButton)
+        card.appendChild(initialURL)
+        card.appendChild(cardAside)
         let displayer = document.getElementById("form__displayer")
         displayer.appendChild(card)
     }catch(err){

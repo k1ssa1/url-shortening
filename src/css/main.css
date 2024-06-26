@@ -33,3 +33,40 @@ main {
   color: white;
   border-radius: 5px;
 }
+
+.card{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: whitesmoke;
+    margin: 0 0 1rem;
+    padding: 0.01rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    border-radius: 5px
+}
+
+.card__long-url-title{
+    color: hsl(0, 0%, 37%)
+}
+
+.card__aside{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aside__short-url-title{
+    margin: 0 1rem;
+    color: hsl(180, 66%, 49%);
+}
+
+.aside__copy-button{
+    background-color: hsl(180, 66%, 49%);
+    padding: 0.4rem 1.5rem;
+    color: whitesmoke;
+    border: 1px solid hsl(180, 66%, 49%);
+    border-radius: 4px
+}
+
+
