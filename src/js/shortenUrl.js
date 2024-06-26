@@ -21,7 +21,20 @@ document.getElementById("form").addEventListener("submit", async e => {
 
     try{
         let promise = await mypromise
-        console.log(promise)
+        let card = document.createElement("div")
+        let initialURL = document.createElement("h6")
+        let shortURL = document.createElement("h6")
+        let copyButton = document.createElement("button")
+        firstURLvalue = document.getElementById("form__input").value;
+        initialURL.innerHTML = firstURLvalue;
+        shortURL.innerHTML = promise.result_url;
+        copyButton.innerHTML ="copy"
+        let cardElements = [initialURL,shortURL,copyButton]
+        cardElements.map(element => {
+            card.appendChild(element)
+        })
+        let displayer = document.getElementById("form__displayer")
+        displayer.appendChild(card)
     }catch(err){
         console.log(err)
     }
