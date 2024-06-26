@@ -30,7 +30,7 @@ document.getElementById("form").addEventListener("submit", async e => {
         shortURL.innerHTML = promise.result_url;
         copyButton.innerHTML ="copy"
         let cardElements = [initialURL,shortURL,copyButton]
-        cardElements.map(element => {
+        cardElements.forEach(element => {
             card.appendChild(element)
         })
         let displayer = document.getElementById("form__displayer")
