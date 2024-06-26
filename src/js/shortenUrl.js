@@ -29,11 +29,20 @@ document.getElementById("form").addEventListener("submit", async e => {
         firstURLvalue = document.getElementById("form__input").value;
         initialURL.innerHTML = firstURLvalue;
         shortURL.innerHTML = promise.result_url;
-        copyButton.innerHTML ="copy"
+        copyButton.innerHTML ="Copy"
 
         card.className = "card"
         initialURL.className = "card__long-url-title"
         shortURL.className = "aside__short-url-title"
+        copyButton.addEventListener("mouseover", () => {
+            copyButton.style.cursor ="pointer"
+        })
+        copyButton.addEventListener("click", () =>{
+            navigator.clipboard.writeText(promise.result_url);
+            copyButton.innerHTML = "Copied!";
+            copyButton.style.backgroundColor ="hsl(260, 8%, 14%)";
+            copyButton.style.border ="1px solid hsl(260, 8%, 14%)";
+        })
         copyButton.className = "aside__copy-button"
         cardAside.className = "card__aside"
         cardAside.appendChild(shortURL);
