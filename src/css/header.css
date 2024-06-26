@@ -1,12 +1,11 @@
 header{
-    padding: 1rem 0
+    padding: 1rem 0;
 }
 
 .header__nav {
     display: grid;
     grid-template-columns: auto auto;
     padding: 0.5rem 1rem;
-    font-family: "Poppins";
     margin: 0 5rem;
 }
 
@@ -48,3 +47,39 @@ header{
     color: white;
     border-radius: 50px;
 }
+
+.greet{
+    margin: 2.2rem 0 0 0;
+    padding: 2rem 0 2rem 10rem;
+    background-image: url("../../images/illustration-working.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-size: contain;
+}
+
+.greet__title{
+    font-size: 3rem;
+    margin: 0;
+    width: 40%;
+    line-height: 3.5rem;
+}
+
+.greet__content{
+    width: 35%;
+    margin: 0;
+    line-height: 1.7rem;
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+}
+
+.greet__button{
+    background-color: hsl(180, 66%, 49%);
+    border: 1px solid hsl(180, 66%, 49%);
+    color: white;
+    border-radius: 50px;
+    padding: 0.5rem 2rem;
+    margin: 1.6rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
