@@ -70,3 +70,81 @@ main {
 }
 
 
+.statistics {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  position: relative;
+  margin: 6rem 0 2rem;
+  padding-bottom: 8rem
+}
+
+.statistics__header {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto
+}
+
+.statistics__header-title {
+  font-size: 2.05rem;
+  margin: 0;
+}
+
+.statistics__header-sub-title {
+  font-size: 1rem;
+  color: hsl(0, 0%, 37%);
+  width: 57%;
+  margin: 0.7rem auto 0;
+  line-height:  1.5rem;
+}
+
+.statistics__cards {
+  display: flex;
+  margin: 5rem 10rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.statistics__card {
+  background-color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  margin: 0 0.8rem;
+  padding: 0 2rem 0.9rem;
+}
+
+.statistics__cards::before{
+  content: "";
+  background-color: hsl(180, 66%, 49%);
+  width: 40%;
+  height: 1.2%;
+  position: absolute;
+  top: 19.8rem;
+  right: 20rem
+}
+
+.statistics__card--one-step{
+  transform: translateY(2rem)
+}
+
+.statistics__card--two-steps{
+  transform: translateY(4rem)
+}
+
+.statistics__card-icon--modified {
+  background-color: hsl(257, 27%, 26%);
+  border-radius: 50%;
+  height: 14%;
+  transform: translateY(-2rem);
+  padding: 1rem
+}
+
+.statistics__card-title {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.statistics__card-description {
+  font-size: 0.85rem;
+  color:hsl(0, 0%, 37%)
+}
