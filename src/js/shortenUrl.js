@@ -52,10 +52,28 @@ document.getElementById("form").addEventListener("submit", async (e) => {
       card.appendChild(cardAside);
       let displayer = document.getElementById("form__displayer");
       displayer.appendChild(card);
+
+      function resetForm(){
+        document.getElementById("error_message").style.display ="none"
+        document.getElementById("form__input").style.border = "";
+        document.getElementById("form__input").style.background = "";
+        document.getElementById("form__input").classList.remove("placeholder-error");
+    }
+
+    resetForm()
+
     } catch (err) {
       console.log(err);
     }
   } else {
-    alert("enter valid url");
+    function validateForm(){
+        document.getElementById("error_message").style.display ="block"
+        document.getElementById("form__input").style.border = "1px solid red";
+        document.getElementById("form__input").style.background = "rgb(236, 211, 211)";
+        document.getElementById("form__input").classList.remove("placeholder-initial");
+        document.getElementById("form__input").classList.add("placeholder-error");
+    }
+
+    validateForm()
   }
 });

@@ -52,14 +52,19 @@
     </header>
     <main>
       <div class="urlfeature">
-        <form action="" id="form">
-          <input
-            type="text"
-            placeholder="shorten a link here..."
-            id="form__input"
-          />
-          <button type="submit" id="form__button">Shorten it!</button>
-        </form>
+        <div class="urlfeature__form-section">
+          <form action="" id="form">
+            <input
+              class="initial"
+              type="text"
+              placeholder="shorten a link here..."
+              id="form__input"
+            />
+            <button type="submit" id="form__button">Shorten it!</button>
+          </form>
+          <p class="form__error-message" id="error_message">Please add a link</p>
+        </div>
+
         <div id="form__displayer"></div>
         <script src="./js/shortenUrl.js"></script>
       </div>
@@ -119,13 +124,21 @@
       </div>
       <footer class="footer">
         <div class="footer_section">
-            <img src="../images/logo.svg" alt="logo" class="footer_section-logo">
+          <img
+            src="../images/logo.svg"
+            alt="logo"
+            class="footer_section-logo"
+          />
         </div>
         <div class="footer_section">
           <h6 class="footer__section-list-title">Features</h6>
           <ul class="footer__section-list">
-            <li class="footer__section-list-item"><a href="">Link Shortening</a></li>
-            <li class="footer__section-list-item"><a href="">Branded Links</a></li>
+            <li class="footer__section-list-item">
+              <a href="">Link Shortening</a>
+            </li>
+            <li class="footer__section-list-item">
+              <a href="">Branded Links</a>
+            </li>
             <li class="footer__section-list-item"><a href="">Analytics</a></li>
           </ul>
         </div>
@@ -149,16 +162,32 @@
         <div class="footer_section">
           <ul class="footer__section-socials">
             <li class="footer__section-socials-item">
-              <img src="../images/icon-facebook.svg" alt="Facebook icons" class="footer__section-socials-icons">
+              <img
+                src="../images/icon-facebook.svg"
+                alt="Facebook icons"
+                class="footer__section-socials-icons"
+              />
             </li>
             <li class="footer__section-socials-item">
-              <img src="../images/icon-twitter.svg" alt="Twitter icon" class="footer__section-socials-icons">
+              <img
+                src="../images/icon-twitter.svg"
+                alt="Twitter icon"
+                class="footer__section-socials-icons"
+              />
             </li>
             <li class="footer__section-socials-item">
-              <img src="../images/icon-pinterest.svg" alt="Pinterest icon" class="footer__section-socials-icons">
+              <img
+                src="../images/icon-pinterest.svg"
+                alt="Pinterest icon"
+                class="footer__section-socials-icons"
+              />
             </li>
             <li class="footer__section-socials-item">
-              <img src="../images/icon-instagram.svg" alt="Instagram icon" class="footer__section-socials-icons">
+              <img
+                src="../images/icon-instagram.svg"
+                alt="Instagram icon"
+                class="footer__section-socials-icons"
+              />
             </li>
           </ul>
         </div>

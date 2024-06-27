@@ -9,14 +9,18 @@ main {
 }
 
 #form {
-  position: relative;
-  bottom: 50%;
-  background-image: url("../../images/bg-shorten-desktop.svg");
-  background-color: hsl(257, 27%, 26%);
-  padding: 2rem 2.5rem;
-  width: 850px;
   display: flex;
   justify-content: center;
+}
+
+.urlfeature__form-section{
+  height: 40%;
+  position: relative;
+  bottom: 50%;
+  padding: 2rem 2.5rem;
+  width: 850px;
+  background-image: url("../../images/bg-shorten-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
 }
 
 #form__input {
@@ -25,6 +29,17 @@ main {
   margin: 0 0.8rem;
 }
 
+/* Placeholder styles for initial state */
+#form__input::placeholder {
+  color: rgba(0, 0, 0, 0.5); /* Default placeholder color */
+}
+
+/* Placeholder styles for error state */
+#form__input.placeholder-error::placeholder {
+  color: rgba(255, 0, 0, 0.5); /* Red placeholder color for error state */
+}
+
+
 #form__button {
   width: 15%;
   padding: 0.7rem;
@@ -32,6 +47,13 @@ main {
   border: 1px solid hsl(180, 66%, 49%);
   color: white;
   border-radius: 5px;
+}
+
+.form__error-message{
+  color: rgb(236, 23, 23);
+  transform: translate(4.5rem, -0.3rem);
+  font-size: 0.8rem;
+  display: none;
 }
 
 .card{
