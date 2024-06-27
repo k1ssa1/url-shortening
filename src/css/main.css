@@ -148,3 +148,26 @@ main {
   font-size: 0.85rem;
   color:hsl(0, 0%, 37%)
 }
+
+.cta{
+  display: grid;
+  justify-content: center;
+  padding: 2rem 0;
+  background-image: url("../../images/bg-boost-desktop.svg");
+  background-color: hsl(257, 27%, 26%);
+}
+
+.cta__title{
+  font-size: 2rem;
+  margin: 0;
+  color: whitesmoke;
+}
+
+.cta__button{
+  background-color: hsl(180, 66%, 49%);
+  padding: 0.6rem 2rem;
+  color: whitesmoke;
+  border: 1px solid hsl(180, 66%, 49%);
+  border-radius: 20px;
+  margin: 1rem auto 0
+}
